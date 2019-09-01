@@ -34,7 +34,7 @@ public class GradeVO {
 		for(int i = 0 ; i < studentVO.length ; i++) {
 			System.out.print(studentVO[i].strNum + "\t");
 			System.out.printf("%3d\t", studentVO[i].intKor);
-			System.out.printf("%3d\n", studentVO[i].intKor);
+			System.out.printf("%3d\t", studentVO[i].intKor);
 		}
 		System.out.println("==========================");
 	}

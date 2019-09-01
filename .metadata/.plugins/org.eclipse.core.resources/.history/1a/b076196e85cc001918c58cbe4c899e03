@@ -15,7 +15,7 @@ public class GradeVO {
 		for(int i = 0 ; i < studentVO.length ; i++) {
 			studentVO[i] = new StudentVO();
 			
-			String strNum = String.format("%03d", i+1);
+			String strNum = String.format("03d", i+1);
 			int intKor = rnd.nextInt(101);
 			int intEng = rnd.nextInt(101);
 			
@@ -34,7 +34,7 @@ public class GradeVO {
 		for(int i = 0 ; i < studentVO.length ; i++) {
 			System.out.print(studentVO[i].strNum + "\t");
 			System.out.printf("%3d\t", studentVO[i].intKor);
-			System.out.printf("%3d\n", studentVO[i].intKor);
+			System.out.printf("%3d\t", studentVO[i].intKor);
 		}
 		System.out.println("==========================");
 	}

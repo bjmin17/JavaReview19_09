@@ -1,0 +1,28 @@
+package array.model;
+
+import java.util.Random;
+
+public class GradeVO {
+
+	private StudentVO[] studentVO;
+	public void newVO(int length) {
+		studentVO = new StudentVO[length];
+		
+	}
+	public void makeScore() {
+		Random rnd = new Random();
+		
+		for(int i = 0 ; i < studentVO.length ; i++) {
+			studentVO[i] = new GradeVO();
+			
+			String strNum = String.format("03d", i+1);
+			int intKor = rnd.nextInt(101);
+			int intEng = rnd.nextInt(101);
+			
+			studentVO[i].strNum = strNum;
+			studentVO[i].intKor = intKor;
+			studentVO[i].intEng = intEng;
+			
+		}
+	}
+}
