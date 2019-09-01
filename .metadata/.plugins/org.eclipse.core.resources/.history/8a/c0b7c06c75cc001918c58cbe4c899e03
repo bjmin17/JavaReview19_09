@@ -1,0 +1,19 @@
+package array;
+
+import java.util.Random;
+
+public class Array_01 {
+
+	public static void main(String[] args) {
+
+		Random rnd = new Random();
+		int[] lottoNum = new int[10];
+		
+		int nLottoIndex = 0;
+		while(true) {
+			int lotNum = rnd.nextInt(45) + 1;
+			
+		}
+	}
+
+}

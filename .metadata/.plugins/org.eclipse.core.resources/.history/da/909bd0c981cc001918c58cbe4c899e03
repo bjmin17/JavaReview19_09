@@ -1,0 +1,10 @@
+package array.model;
+
+public class GradeVO {
+
+	private GradeVO[] gradeVO;
+	public void newVO(int length) {
+		gradeVO = new GradeVO[length];
+		
+	}
+}

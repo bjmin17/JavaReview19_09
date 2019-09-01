@@ -1,0 +1,35 @@
+package array;
+
+import java.util.Random;
+
+public class Array_01 {
+
+	public static void main(String[] args) {
+
+		Random rnd = new Random();
+		int[] lottoNum = new int[6];
+		
+		int nLottoIndex = 0;
+		
+		while(true) {
+			int lotNum = rnd.nextInt(45) + 1;
+			int index;
+			for(index = 0; index < lottoNum.length; index ++) {
+				if(lottoNum[index] == lotNum) break;
+			}
+			
+			if(index >= lottoNum.length)
+				lottoNum[nLottoIndex++] = lotNum;
+			
+			if(nLottoIndex >= lottoNum.length) break;
+			
+		}
+		System.out.print("로또 번호 추첨 :");
+		for(int i = 0 ; i < lottoNum.length ; i++) {
+			System.out.println(lottoNum[i] + ", ");
+		}
+	}
+	
+	
+
+}

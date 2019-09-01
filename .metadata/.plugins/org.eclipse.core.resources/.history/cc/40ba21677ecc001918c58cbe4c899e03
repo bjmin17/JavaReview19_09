@@ -1,0 +1,52 @@
+package array;
+
+import array.model.StudentVO;
+
+public class StudentEx_01 {
+
+	public static void main(String[] args) {
+		
+		StudentVO[] stVO = new StudentVO[3];
+		for(int i = 0; i < stVO.length ; i++) {
+			stVO[i] = new StudentVO();
+		}
+		
+		stVO[0].strNum = "001";
+		stVO[0].strName = "홍길동";
+		stVO[0].intKor = 85;
+		stVO[0].intEng = 72;
+		
+		stVO[1].strNum = "002";
+		stVO[1].strName = "김갑동";
+		stVO[1].intKor = 33;
+		stVO[1].intEng = 44;
+		
+		stVO[2].strNum = "003";
+		stVO[2].strName = "김을동";
+		stVO[2].intKor = 55;
+		stVO[2].intEng = 66;
+		
+		System.out.println("==============================");
+		System.out.println("학생 총점과 평균");
+		System.out.println("------------------------------");
+		System.out.println("학번\t이름\t국어\t영어");
+		System.out.println("------------------------------");
+		for(int i = 0; i < stVO.length ; i++) {
+		
+			System.out.print(stVO[i].strNum + "\t");
+			System.out.print(stVO[i].strName + "\t");
+			System.out.print(stVO[i].intKor + "\t");
+			System.out.print(stVO[i].intEng + "\n");
+			stVO[0].total();
+		stVO[0].average();
+		
+		stVO[1].total();
+		stVO[1].average();
+		
+		stVO[2].total();
+		stVO[2].average();
+		}
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+package array;
+
+import array.model.StudentVO;
+
+public class StudentEx_01 {
+
+	public static void main(String[] args) {
+		
+		for(int i = 0; i < 4 ; i++) {
+			
+			
+		StudentVO St01 = new StudentVO();
+		}
+		
+	}
+}

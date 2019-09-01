@@ -1,0 +1,12 @@
+package chapter2;
+
+public class ImplicitConversion {
+
+	public static void main(String[] args) {
+		
+		int n = 10;	//int형 변수 n에 정수 값 10을 대입
+		double dnum = n;	//int형 변수 n의 값을 double형 변수 dnum에 대입
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package array.model;
+
+import java.util.Random;
+
+public class GradeVO {
+
+	private GradeVO[] gradeVO;
+	public void newVO(int length) {
+		gradeVO = new GradeVO[length];
+		
+	}
+	public void makeScore() {
+		Random rnd = new Random();
+		
+	}
+}
